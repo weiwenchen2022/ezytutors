@@ -1,0 +1,10 @@
+[package]
+name = "docker-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9.0"
+
+# Openssl for linux build
+openssl = { version = "0.10.41", features = ["vendored"] }

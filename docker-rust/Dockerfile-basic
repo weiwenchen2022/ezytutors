@@ -1,0 +1,14 @@
+# Use the main rust Docker image
+FROM rust
+
+# copy app into docker image
+COPY . /app
+
+# Set the workdirectory
+WORKDIR /app
+
+# build the app
+RUN cargo build --release
+
+# start the application
+CMD ["./target/release/docker-rust"]

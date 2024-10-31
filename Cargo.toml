@@ -1,0 +1,9 @@
+[package]
+name = "ezytutors"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace]
+members = ["docker-rust", "tutor-web-app-ssr", "tutor-web-service"]
